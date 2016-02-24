@@ -1,4 +1,4 @@
-## [View the graph!](http://jacobcarpenter.github.io/hack-bellingham-graph/)
+## [View the graph!](http://hackbellingham.github.io/member-graph/)
 
 # What is it?
 
