@@ -69,6 +69,18 @@ jim:
     - rick.kaiser
     - robschripsema
 
+kevinstock:
+    - alissafrench
+    - amiel
+    - andleer
+    - bcoden
+    - brycesharp
+    - jim
+    - kabojnk
+    - matthinz
+    - mike-wiebe 
+    - nathancarnes
+
 etihwddot:
     - bgrainger
     - bryanrsmith
