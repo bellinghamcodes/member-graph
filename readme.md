@@ -3,6 +3,7 @@
 This is a partial graph of the members of the [Hack Bellingham](http://hackbellingham.com/) group.
 
 The high-level steps involved in creating this visualization:
+
 1. Dump user data from Slack. See https://api.slack.com/methods/users.list/test for an example of how to do this.
 2. Copy this D3 example https://bl.ocks.org/mbostock/4062045.
 3. Replace Les Misérables data with Hack Bellingham members.
