@@ -19,6 +19,12 @@
       "img": "https://secure.gravatar.com/avatar/fd3396b4ba715bf49e85d59c44e1963e.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0008-24.png"
     },
     {
+      "name": "anitun",
+      "real_name": "",
+      "id": "U0NSY57T7",
+      "img": "https://secure.gravatar.com/avatar/d3e9c98fbe9354c71b058a6d6341c90c.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0022-24.png"
+    },
+    {
       "name": "aykray",
       "real_name": "",
       "id": "U0NMYRZK6",
@@ -155,6 +161,12 @@
       "real_name": "Ginger Reinauer",
       "id": "U0NH23VV3",
       "img": "https://avatars.slack-edge.com/2016-02-22/22616955536_c8846c95e2a2d099b9f2_24.jpg"
+    },
+    {
+      "name": "gwlund",
+      "real_name": "",
+      "id": "U0NSDLHGT",
+      "img": "https://secure.gravatar.com/avatar/a3772a498d7645a7278be17e9306cf5e.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0026-24.png"
     },
     {
       "name": "hildigerr",
@@ -320,9 +332,9 @@
     },
     {
       "name": "mike-wiebe",
-      "real_name": "",
+      "real_name": "Mike Wiebe",
       "id": "U0NG2NCA0",
-      "img": "https://secure.gravatar.com/avatar/d04b26610de7301746dec3a13eb7f40f.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0020-24.png"
+      "img": "https://avatars.slack-edge.com/2016-02-24/22894240480_ca9311802cd270347116_24.png"
     },
     {
       "name": "mikejestes",
