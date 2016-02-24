@@ -21,8 +21,8 @@ This visualization is incomplete. Please feel free to submit PRs to add more con
 1. `npm run start`
 
 # To add connections
-1. Modify `links.txt` to include your username and the list of users you know. See `users.json` to get the correct name values.
-2. `node process-links`
+1. Modify `data/links.txt` to include your username and the list of users you know. See `data/users.json` to get the correct name values.
+2. `node ./scripts/process-links`
 3. Run locally and preview the results
 
 PRs welcome!
