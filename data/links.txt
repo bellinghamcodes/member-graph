@@ -1,0 +1,110 @@
+bgrainger:
+    - bryanrsmith
+    - david.rogers
+    - ejball
+    - etihwddot
+    - ianmundy
+    - jacob_c
+    - john
+    - jonathanhaas
+    - masters
+    - petervenable
+    - resa
+    - royd
+    - schoon
+    - sportnak
+
+bryanrsmith:
+    - bgrainger
+    - david.rogers
+    - ejball
+    - etihwddot
+    - ianmundy
+    - jacob_c
+    - john
+    - jonathanhaas
+    - masters
+    - mikekoepp
+    - perry.fizzano
+    - petervenable
+    - resa
+    - royd
+    - schoon
+    - sportnak
+
+jacob_c:
+    - bgrainger
+    - bryanrsmith
+    - david.rogers
+    - ejball
+    - etihwddot
+    - ianmundy
+    - jim
+    - john
+    - jonathanhaas
+    - masters
+    - mikekoepp
+    - petervenable
+    - resa
+    - rick.kaiser
+    - robschripsema
+    - royd
+    - schoon
+    - sportnak
+
+jim:
+    - jacob_c
+    - mikekoepp
+    - rick.kaiser
+    - robschripsema
+
+etihwddot:
+    - bgrainger
+    - bryanrsmith
+    - david.rogers
+    - ejball
+    - ianmundy
+    - jacob_c
+    - john
+    - jonathanhaas
+    - masters
+    - petervenable
+    - resa
+    - royd
+    - schoon
+    - sportnak
+
+mikekoepp:
+    - jacob_c
+    - jim
+    - rick.kaiser
+    - robschripsema
+
+resa:
+    - bgrainger
+    - bryanrsmith
+    - david.rogers
+    - ejball
+    - etihwddot
+    - ianmundy
+    - jacob_c
+    - john
+    - jonathanhaas
+    - masters
+    - petervenable
+    - royd
+    - schoon
+    - sportnak
+
+rick.kaiser:
+    - jacob_c
+    - jim
+    - mikekoepp
+    - robschripsema
+
+robschripsema:
+    - jacob_c
+    - jim
+    - mikekoepp
+    - rick.kaiser
+
