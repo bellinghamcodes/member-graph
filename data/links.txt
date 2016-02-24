@@ -1,3 +1,11 @@
+amiel:
+    - josh
+    - kevinstock
+    - mikejestes
+    - nathancarnes
+    - rj_rockets
+    - tim
+
 bgrainger:
     - bryanrsmith
     - david.rogers
