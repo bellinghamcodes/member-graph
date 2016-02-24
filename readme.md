@@ -1,3 +1,5 @@
+## [View the graph!](http://jacobcarpenter.github.io/hack-bellingham-graph/)
+
 # What is it?
 
 This is a partial graph of the members of the [Hack Bellingham](http://hackbellingham.com/) group.
