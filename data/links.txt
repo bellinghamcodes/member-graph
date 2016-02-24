@@ -97,6 +97,17 @@ etihwddot:
     - schoon
     - sportnak
 
+matthinz:
+    - amiel
+    - bmck
+    - josh
+    - kabojnk
+    - kevinstock
+    - mike-wiebe
+    - mikejestes
+    - nathancarnes
+    - tim
+
 mikekoepp:
     - jacob_c
     - jim
