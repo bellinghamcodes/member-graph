@@ -57,6 +57,7 @@ jacob_c:
     - david.rogers
     - ejball
     - etihwddot
+    - gwlund
     - ianmundy
     - jim
     - john
@@ -86,7 +87,7 @@ kevinstock:
     - jim
     - kabojnk
     - matthinz
-    - mike-wiebe 
+    - mike-wiebe
     - nathancarnes
 
 etihwddot:
