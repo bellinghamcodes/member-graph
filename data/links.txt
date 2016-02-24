@@ -7,6 +7,7 @@ amiel:
     - tim
 
 bgrainger:
+    - andleer
     - bryanrsmith
     - david.rogers
     - ejball
@@ -16,6 +17,8 @@ bgrainger:
     - john
     - jonathanhaas
     - masters
+    - megweber
+    - mike-wiebe
     - petervenable
     - resa
     - royd
