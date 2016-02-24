@@ -25,6 +25,14 @@ bgrainger:
     - schoon
     - sportnak
 
+bmck:
+    - gwlund
+    - josh
+    - matthinz
+    - mikejestes
+    - nathancarnes
+    - rj_rockets
+
 bryanrsmith:
     - bgrainger
     - david.rogers
