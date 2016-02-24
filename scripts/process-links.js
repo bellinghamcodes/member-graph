@@ -30,9 +30,9 @@ fs.readFile(path.join(__dirname, '../data/users.json'), (err, data) => {
             .reduce((acc, curr) => [...acc, ...curr], []);
 
 		const output = Object.assign({}, users, { links: linkOutput });
-        fs.writeFile(path.join(__dirname,'../public/merged.json'), JSON.stringify(output, null, 2), err => {
-            if (err) throw err;
-            console.log('Done!');
-        })
+		fs.writeFile(path.join(__dirname,'../public/merged.json'), JSON.stringify(output, null, 2), err => {
+			if (err) throw err;
+			console.log('Done!');
+		});
 	});
 });
