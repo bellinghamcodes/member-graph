@@ -205,12 +205,6 @@
       "img": "https://secure.gravatar.com/avatar/17e3995bfa77d47c6bc1c6774a956295.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0016-24.png"
     },
     {
-      "name": "jennifer",
-      "real_name": "Jennifer Longstaff",
-      "id": "U0NUUPV3L",
-      "img": "https://secure.gravatar.com/avatar/19104d04294764276f281d00ad509a5c.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0015-24.png"
-    },
-    {
       "name": "jeremyrusnak",
       "real_name": "Jeremy Rusnak",
       "id": "U0NH81RUJ",
@@ -227,6 +221,12 @@
       "real_name": "",
       "id": "U0NHFH9QW",
       "img": "https://secure.gravatar.com/avatar/ba8b5a4f03a74b0dbc15d2d7152d82d2.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0002-24.png"
+    },
+    {
+      "name": "jkl2",
+      "real_name": "Jennifer Longstaff",
+      "id": "U0NUUPV3L",
+      "img": "https://avatars.slack-edge.com/2016-02-24/22983730609_320374ca6312467c8faa_24.png"
     },
     {
       "name": "john",
