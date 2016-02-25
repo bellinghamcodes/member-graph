@@ -39,9 +39,12 @@ var svg = d3.select("body").append("svg")
 	.attr("width", width)
 	.attr("height", height);
 
-fetch('merged.json')
-	.then(response => response.json())
-	.then(render);
+var request = new XMLHttpRequest();
+request.addEventListener('load', function(e) {
+	render(JSON.parse(request.responseText));
+});
+request.open('GET', 'merged.json');
+request.send();
 
 function render(graph) {
 	force
