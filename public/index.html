@@ -63,7 +63,7 @@ function render(graph) {
 			.attr("height", 24)
 			.attr("width", 24)
 			.on("mouseover", function(d) {
-				link.classed('highlighted', l => d === l.source || d === l.target);
+				link.classed('highlighted', function(l) { return d === l.source || d === l.target; });
 			})
 			.on("mouseout", function() {
 				link.classed('highlighted', false);
