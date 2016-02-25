@@ -163,6 +163,12 @@
       "img": "https://avatars.slack-edge.com/2016-02-22/22616955536_c8846c95e2a2d099b9f2_24.jpg"
     },
     {
+      "name": "gramstrong",
+      "real_name": "",
+      "id": "U0NU05CBC",
+      "img": "https://secure.gravatar.com/avatar/39521ad09c8dc270ce3b4f4e49d972d3.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0001-24.png"
+    },
+    {
       "name": "gwlund",
       "real_name": "",
       "id": "U0NSDLHGT",
@@ -197,6 +203,12 @@
       "real_name": "Jacob Carpenter",
       "id": "U0NG09JLB",
       "img": "https://secure.gravatar.com/avatar/17e3995bfa77d47c6bc1c6774a956295.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0016-24.png"
+    },
+    {
+      "name": "jennifer",
+      "real_name": "Jennifer Longstaff",
+      "id": "U0NUUPV3L",
+      "img": "https://secure.gravatar.com/avatar/19104d04294764276f281d00ad509a5c.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0015-24.png"
     },
     {
       "name": "jeremyrusnak",
@@ -443,6 +455,18 @@
       "real_name": "Syd  Cole",
       "id": "U0NKJ6WHJ",
       "img": "https://secure.gravatar.com/avatar/95298de75de53343602a36f66cf91c08.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0020-24.png"
+    },
+    {
+      "name": "teskadera",
+      "real_name": "Robert Tierney",
+      "id": "U0NTYRQJV",
+      "img": "https://secure.gravatar.com/avatar/463e4d3039987c9c5a5c471875ce0f4d.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F0180%2Fimg%2Favatars%2Fava_0003-24.png"
+    },
+    {
+      "name": "thed",
+      "real_name": "David Mitchell",
+      "id": "U0NTB3196",
+      "img": "https://secure.gravatar.com/avatar/f0d620fa57477b3e0ee494322e33df4a.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0010-24.png"
     },
     {
       "name": "thejoysofutfencoding",
