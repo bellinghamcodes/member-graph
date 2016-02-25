@@ -151,3 +151,19 @@ robschripsema:
     - mikekoepp
     - rick.kaiser
 
+rj_rockets:
+    - alissafrench
+    - amiel
+    - andleer
+    - bmck
+    - bryanrsmith
+    - ianbharper
+    - josh
+    - nathancarnes
+    - perry.fizzano
+    - rhj4
+    - robschripsema
+    - sydneypaige
+    - teskadera
+    - tim
+    - victor
