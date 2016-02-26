@@ -26,12 +26,16 @@ bgrainger:
     - sportnak
 
 bmck:
+    - amiel
     - gwlund
     - josh
+    - mattbain
     - matthinz
     - mikejestes
     - nathancarnes
     - rj_rockets
+    - rshupe
+    - tim
 
 bryanrsmith:
     - bgrainger
