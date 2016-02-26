@@ -1,6 +1,6 @@
 {
   "name": "hack-bellingham-graph",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A graph of the connections in the Hack Bellingham Slack",
   "scripts": {
       "start": "http-server"
