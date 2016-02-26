@@ -6,6 +6,14 @@ amiel:
     - rj_rockets
     - tim
 
+bcoden:
+    - alissafrench
+    - kabojnk
+    - matthinz
+    - mike-wiebe
+    - nathancarnes
+    - jeremyrusnak
+
 bgrainger:
     - andleer
     - bryanrsmith
