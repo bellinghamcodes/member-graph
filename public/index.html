@@ -85,10 +85,11 @@ function render(graph) {
 		.text(function(d) { return d.name; });
 
 	force.on("tick", function() {
-		link.attr("x1", function(d) { return d.source.x + 12; })
-			.attr("y1", function(d) { return d.source.y + 12; })
-			.attr("x2", function(d) { return d.target.x + 12; })
-			.attr("y2", function(d) { return d.target.y + 12; });
+		var adjustment = Math.floor(nodeSize/2);
+		link.attr("x1", function(d) { return d.source.x + adjustment; })
+			.attr("y1", function(d) { return d.source.y + adjustment; })
+			.attr("x2", function(d) { return d.target.x + adjustment; })
+			.attr("y2", function(d) { return d.target.y + adjustment; });
 
 		node.attr("x", function(d) { return d.x; })
 			.attr("y", function(d) { return d.y; });
