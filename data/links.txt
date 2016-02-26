@@ -175,3 +175,9 @@ rj_rockets:
     - teskadera
     - tim
     - victor
+    
+kenstipek:
+    - nathancarnes
+    - bigfreshdoug
+    - perry.fizzano
+    - schoon
