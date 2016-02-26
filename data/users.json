@@ -49,10 +49,22 @@
       "img": "https://secure.gravatar.com/avatar/491514c02a8e0d51710ee8e812235840.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F0180%2Fimg%2Favatars%2Fava_0017-24.png"
     },
     {
+      "name": "bgradin",
+      "real_name": "Brian Gradin",
+      "id": "U0P85K9GF",
+      "img": "https://avatars.slack-edge.com/2016-02-26/23278058722_9b16981a2fe516f77788_24.jpg"
+    },
+    {
       "name": "bgrainger",
       "real_name": "Bradley Grainger",
       "id": "U0NFRTDPW",
       "img": "https://secure.gravatar.com/avatar/94f49719dd16d949dd4e10e54e4d267a.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0015-24.png"
+    },
+    {
+      "name": "bigfreshdoug",
+      "real_name": "Doug DeVries",
+      "id": "U0P2Z2SUB",
+      "img": "https://secure.gravatar.com/avatar/29f1976f9d50fc5c406e5b08a25c3c07.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F0180%2Fimg%2Favatars%2Fava_0004-24.png"
     },
     {
       "name": "bmck",
@@ -181,6 +193,12 @@
       "img": "https://avatars.slack-edge.com/2016-02-23/22810181714_680f47c0f2ac3cbe0961_24.jpg"
     },
     {
+      "name": "hotpocketarefun",
+      "real_name": "",
+      "id": "U0P3U5138",
+      "img": "https://secure.gravatar.com/avatar/1723c1bd586169204092f29a2cc56ab9.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0011-24.png"
+    },
+    {
       "name": "ianbharper",
       "real_name": "",
       "id": "U0NHFGCHJ",
@@ -193,6 +211,12 @@
       "img": "https://secure.gravatar.com/avatar/77474f150af0c231eb0b5f26d3e7ce25.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0006-24.png"
     },
     {
+      "name": "jackiejackie",
+      "real_name": "",
+      "id": "U0P84AX3N",
+      "img": "https://secure.gravatar.com/avatar/abcc50288b07c536123474e16cc787c4.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0009-24.png"
+    },
+    {
       "name": "jacob",
       "real_name": "",
       "id": "U0NEZ8677",
@@ -203,6 +227,12 @@
       "real_name": "Jacob Carpenter",
       "id": "U0NG09JLB",
       "img": "https://secure.gravatar.com/avatar/17e3995bfa77d47c6bc1c6774a956295.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0016-24.png"
+    },
+    {
+      "name": "jenny_cantrell",
+      "real_name": "",
+      "id": "U0P89AYKU",
+      "img": "https://secure.gravatar.com/avatar/a2c6eee9a9a006f8947c82c107f6a81f.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0020-24.png"
     },
     {
       "name": "jeremyrusnak",
@@ -367,6 +397,12 @@
       "img": "https://secure.gravatar.com/avatar/4d6a61fbd3126ba2f8bc4252d52cc541.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F0180%2Fimg%2Favatars%2Fava_0025-24.png"
     },
     {
+      "name": "mowzie",
+      "real_name": "",
+      "id": "U0P3Q2U05",
+      "img": "https://secure.gravatar.com/avatar/0ac7f1926d5c9547f27d143f494b5759.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0020-24.png"
+    },
+    {
       "name": "nathancarnes",
       "real_name": "Nathan Carnes",
       "id": "U0NBXQ3L7",
@@ -383,6 +419,12 @@
       "real_name": "Peter Venable",
       "id": "U0NH040V6",
       "img": "https://avatars.slack-edge.com/2016-02-22/22572712196_e6a1ff6f0e8fb2bc21f5_24.jpg"
+    },
+    {
+      "name": "rburnett",
+      "real_name": "Ryan Burnett",
+      "id": "U0P542XPE",
+      "img": "https://avatars.slack-edge.com/2016-02-25/23174332356_5388ebfdb493276f481f_24.png"
     },
     {
       "name": "resa",
@@ -433,6 +475,12 @@
       "img": "https://secure.gravatar.com/avatar/2cb7b1832aa96a68360efa65eef37d9c.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0015-24.png"
     },
     {
+      "name": "rshupe",
+      "real_name": "",
+      "id": "U0NV3792N",
+      "img": "https://avatars.slack-edge.com/2016-02-24/22986888163_62496ca128bfc5e161a5_24.jpg"
+    },
+    {
       "name": "schoon",
       "real_name": "Michael Schoonmaker",
       "id": "U0NJAK2F2",
@@ -475,6 +523,12 @@
       "img": "https://secure.gravatar.com/avatar/ed19dfc7a81c238111fe66847a194c0d.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0001-24.png"
     },
     {
+      "name": "thered",
+      "real_name": "Rory McLeod",
+      "id": "U0P8G79A7",
+      "img": "https://secure.gravatar.com/avatar/f00251c0740d69abc86d337fe70274c4.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0000-24.png"
+    },
+    {
       "name": "tim",
       "real_name": "Tim White",
       "id": "U0NN5QDAS",
@@ -490,7 +544,7 @@
       "name": "victor",
       "real_name": "Victor Valadez",
       "id": "U0NGZ1BQU",
-      "img": "https://secure.gravatar.com/avatar/48ba880b4cd17b20e0cfbb56beb46175.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F0180%2Fimg%2Favatars%2Fava_0025-24.png"
+      "img": "https://avatars.slack-edge.com/2016-02-24/22986465777_ca083682143714176731_24.jpg"
     },
     {
       "name": "wkeuffel",
