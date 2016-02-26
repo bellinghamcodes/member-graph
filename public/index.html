@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=.5, maximum-scale=2">
 <style>
+
+document, body {
+	margin: 0;
+	padding: 0;
+}
 
 .node {
 	stroke: #fff;
@@ -24,16 +30,21 @@
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
 
-var width = 800,
-	height = 600;
+console.log(window.innerWidth, window.innerHeight);
+
+var width        = window.innerWidth,
+	height       = window.innerHeight,
+	smallest     = Math.min(width, height),
+	nodeSize     = 24,
+	nodeDistance = Math.floor(smallest/5);
 
 var color = d3.scale.category20();
 
 var force = d3.layout.force()
-	.charge(-120)
-	.linkDistance(120)
+	.charge(-nodeDistance)
+	.linkDistance(nodeDistance)
 	.linkStrength(0.1)
-	.size([width, height]);
+	.size([width, height])
 
 var svg = d3.select("body").append("svg")
 	.attr("width", width)
@@ -60,8 +71,8 @@ function render(graph) {
 		.enter().append("image")
 			.attr('xlink:href', function(d) { return d.img; })
 			.attr("class", "node")
-			.attr("height", 24)
-			.attr("width", 24)
+			.attr("height", nodeSize)
+			.attr("width", nodeSize)
 			.on("mouseover", function(d) {
 				link.classed('highlighted', function(l) { return d === l.source || d === l.target; });
 			})
