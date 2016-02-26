@@ -175,3 +175,25 @@ rj_rockets:
     - teskadera
     - tim
     - victor
+    
+nathancarnes:
+    - amiel
+    - josh
+    - sydneypaige
+    - tim
+    - benn_design
+    - bigfreshdoug
+    - clickmonster
+    - jkl2
+    - johnk
+    - johnnydanger
+    - kabojnk
+    - kylerader
+    - matthinz
+    - teskadera
+    - mikejestes
+    - rhys.faler
+    - rj_rockets
+    - rshupe
+    - wkeuffel
+    - wordern
