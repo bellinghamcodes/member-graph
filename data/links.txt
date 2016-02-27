@@ -195,7 +195,7 @@ nathancarnes:
     - rj_rockets
     - rshupe
     - wkeuffel
-    - wordern
+    - worden
 
 resa:
     - bgrainger
