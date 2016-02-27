@@ -156,6 +156,28 @@ mikekoepp:
     - rick.kaiser
     - robschripsema
 
+nathancarnes:
+    - amiel
+    - josh
+    - sydneypaige
+    - tim
+    - benn_design
+    - bigfreshdoug
+    - clickmonster
+    - jkl2
+    - johnk
+    - johnnydanger
+    - kabojnk
+    - kylerader
+    - matthinz
+    - teskadera
+    - mikejestes
+    - rhys.faler
+    - rj_rockets
+    - rshupe
+    - wkeuffel
+    - wordern
+
 resa:
     - bgrainger
     - bryanrsmith
@@ -200,7 +222,7 @@ rj_rockets:
     - teskadera
     - tim
     - victor
-    
+
 kenstipek:
     - nathancarnes
     - bigfreshdoug
