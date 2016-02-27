@@ -118,6 +118,20 @@ etihwddot:
     - schoon
     - sportnak
 
+mattbain:
+    - amiel
+    - benn_design
+    - bigfreshdoug
+    - bmck
+    - clickmonster
+    - josh
+    - matthinz
+    - megweber
+    - mikejestes
+    - nathancarnes
+    - rhys.faler
+    - tim
+
 matthinz:
     - amiel
     - bmck
