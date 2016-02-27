@@ -76,6 +76,17 @@ body {
 	cursor: pointer;
 }
 
+.person:first-child,
+.person:first-child:hover {
+	background: #333;
+	color: #fff;
+	cursor: default;
+}
+
+.person:first-child .person__desc {
+	color: #ccc;
+}
+
 .person + .person {
 	border-top: 1px solid #ccc;
 }
