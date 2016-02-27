@@ -6,6 +6,7 @@
 document, body {
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
 }
 
 .node {
@@ -32,19 +33,14 @@ document, body {
 
 console.log(window.innerWidth, window.innerHeight);
 
-var width        = window.innerWidth,
-	height       = window.innerHeight,
-	smallest     = Math.min(width, height),
-	nodeSize     = 24,
-	nodeDistance = Math.floor(smallest/5);
+var nodeSize = 24;
+var width, height, smallest, nodeDistance;
+refreshSizes();
 
 var color = d3.scale.category20();
 
 var force = d3.layout.force()
-	.charge(-nodeDistance)
-	.linkDistance(nodeDistance)
-	.linkStrength(0.1)
-	.size([width, height])
+	.linkStrength(0.1);
 
 var svg = d3.select("body").append("svg")
 	.attr("width", width)
@@ -57,11 +53,35 @@ request.addEventListener('load', function(e) {
 request.open('GET', 'merged.json');
 request.send();
 
+function refreshSizes() {
+	width = window.innerWidth;
+	height = window.innerHeight;
+	smallest = Math.min(width, height);
+	nodeDistance = Math.floor(smallest/6);
+}
+
+function resize() {
+	force.stop();
+	refreshSizes();
+
+    svg
+		.attr("width", width)
+		.attr("height", height);
+
+	force
+		.charge(-nodeDistance)
+		.linkDistance(nodeDistance)
+		.size([width, height])
+		.start();
+}
+
 function render(graph) {
 	force
 		.nodes(graph.nodes)
-		.links(graph.links)
-		.start();
+		.links(graph.links);
+
+	window.addEventListener('resize', resize);
+	resize();
 
 	var link = svg.selectAll(".link").data(graph.links)
 		.enter().append("line")
@@ -86,13 +106,13 @@ function render(graph) {
 
 	force.on("tick", function() {
 		var adjustment = Math.floor(nodeSize/2);
-		link.attr("x1", function(d) { return d.source.x + adjustment; })
-			.attr("y1", function(d) { return d.source.y + adjustment; })
-			.attr("x2", function(d) { return d.target.x + adjustment; })
-			.attr("y2", function(d) { return d.target.y + adjustment; });
+		link.attr("x1", function(d) { return d.source.x; })
+			.attr("y1", function(d) { return d.source.y; })
+			.attr("x2", function(d) { return d.target.x; })
+			.attr("y2", function(d) { return d.target.y; });
 
-		node.attr("x", function(d) { return d.x; })
-			.attr("y", function(d) { return d.y; });
+		node.attr("x", function(d) { return d.x - adjustment; })
+			.attr("y", function(d) { return d.y - adjustment; });
 	});
 };
 
