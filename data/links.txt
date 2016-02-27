@@ -116,6 +116,26 @@ jim:
     - rick.kaiser
     - robschripsema
 
+jonathanhaas:
+    - bgradin
+    - bgrainger
+    - bryan.albert
+    - bryanrsmith
+    - david.rogers
+    - ejball
+    - etihwddot
+    - ianmundy
+    - jacob_c
+    - john
+    - masters
+    - petervenable
+    - rburnett
+    - resa
+    - royd
+    - schoon
+    - sportnak
+    - thed
+
 kevinstock:
     - alissafrench
     - amiel
