@@ -175,3 +175,22 @@ rj_rockets:
     - teskadera
     - tim
     - victor
+
+bgradin:
+    - bgrainger
+    - kevinstock
+    - schoon
+    - mike-wiebe
+    - bryan.albert
+    - ejball
+    - etihwddot
+    - ianmundy
+    - john
+    - jonathanhaas
+    - kylerader
+    - masters
+    - petervenable
+    - rburnett
+    - resa
+    - royd
+    - thed
