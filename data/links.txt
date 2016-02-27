@@ -5,6 +5,13 @@ amiel:
     - nathancarnes
     - rj_rockets
     - tim
+    - miket
+    - bmck
+    - matthinz
+    - jkl2
+    - mattbain
+    - rhys.faler
+    - rshupe
 
 bcoden:
     - alissafrench
