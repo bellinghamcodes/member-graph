@@ -1,0 +1,13 @@
+language: node_js
+
+node_js:
+  - "5"
+
+env:
+  global:
+    - GITHUB_REPO: hackbellingham/member-graph
+    - secure: Cy1GawYAOmsaGa1tPx0Lw/y6xGXj0z/EgecC+d4OBmL2Hb2hyycEXE5TT02IpKUpRQJAlcuq5JAyJ3bVq4InnVQ0BKXUr/jySdlAZSWuvpdtG9lAl0vLX1u4grG70/z00QBrK6mvIT14z4B0uE0hJ6bb0XWiBs83HvPlSJbt3P1g7DBzCiqcfxaYO69bLgWPIyCQU/GNU3ci9JsppK94CM8IrvYVsjvMaqj2DKLz8LaQOC5mjk93/zzgeR8QpfVeAfDZVMNfmFeH57KlGndG8m2V27isU3SJ2OzMnKXUE/OIX2I6szNJCbFVtCEwY9UHJzcto3T3TFbnt5ofdHq7Dp1ifjRyidGGdd55rECeTX3nV2dyQGgUO8xkwrTmhhiUZ6XcEShGbznExO+REEzKbeoIpoonlIWX+GL8OZdQLmBfNwcMz4YsbJPMKI+SrNORKwVD47VK3f27rOsno0B9jx6Voy1vH89100RI57D+MeaIFLVVBWMCyK2MtpAKi3WxzRs4mHzR+v73MZtmQN8X2w8jq/tkMTObavGWUWt4cOe5n/KQR0tSZc0zZntn7Hgla3eaDfy1OfBLut47aRcvm+wZcpoWMCOafixJ3/L9Zg9kVCIbOC8lfuOgVBTezSwu1zvgmX6yNSchVDUaqotXO4bzrWmBatnbBEV4wt4rGMs=
+
+script:
+  - node ./scripts/process-links
+  - node ./scripts/publish-github-pages 
