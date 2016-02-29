@@ -11,3 +11,7 @@ env:
 script:
   - node ./scripts/process-links
   - node ./scripts/publish-github-pages 
+
+notifications:
+  slack:
+    - secure: CwHBNXirpoPpgjx7WkKXlm/D1HzMb/B2y+O0lv0+vK0in/VTdC+ETvvBxZ75PPRdsJjw7RQD2g68z12Ex6l2xNFY4HqTtukWVT7lAyDbuEh8PWLS6fEc7LUQXSxbMARSoJwq7EBO2Pw1CnQvWhrYu3pZD1DtB7roBGyhKgs08UhKVRQJxCW3Wc9GToYQmgWZDbEDwoevj8akructJ0QstzYrZQCdcLdMCR4C8wcewWi6JKVCC5YBluxWrb1SI9xvqZbcKtJVHZ7/d77i8hmpIToqlM090TlBsxvJcxhw9o3+AwgRTTYHsrhhhi4AMjZ2vgE3FBLLczBUVG8tFdLCRYlEWgUJcMG1a5F4pP0X5QNHGRDi8SIpak63dm122S6l+Nr0nAjdtZtIS7fLO/EtPI69LTMv8AyO0mT7/oNqNvMPbMgvFupDFE0LTY5O3RmX8/mB/kR/ytkV5IrX+ECSOzb65FQxExardQky6gX5TSEUjgqao2KrCwheVyUsKe7Obl9UErhmO54PwbAYuh0/Psr4u2KP64HzTIgnkjVZRx+T+MSPQ8cYhcuJ8oXUr/StAh0Wi/HTkNje/VL/Gf9TvaDKElDqOKnjfvG12vI1fCk12Y4M4/QG5Oon0TysJSwTl1STGy+dBw2NeXHIuuJkiwEmHv32xqKSfbw1Pbtndqo=
