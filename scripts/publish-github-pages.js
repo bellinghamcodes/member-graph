@@ -44,9 +44,8 @@ createTempDir()
 		return execPromise('git push --force --quiet "'+ githubUrl +'" master:gh-pages > /dev/null 2>&1', repo);
 	})
 	.then( (repo) => {
-		console.log(repo);
 		return execPromise('rm -rf "'+ repo +'"');
-	})
+	});
 
  
 // Utility Functions
