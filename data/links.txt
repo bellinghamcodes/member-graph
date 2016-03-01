@@ -92,6 +92,7 @@ bryanrsmith:
 jacob_c:
     - bgrainger
     - bryanrsmith
+    - bryan.albert
     - david.rogers
     - ejball
     - etihwddot
@@ -103,12 +104,15 @@ jacob_c:
     - masters
     - mikekoepp
     - petervenable
+    - rburnett
     - resa
+    - rhj4
     - rick.kaiser
     - robschripsema
     - royd
     - schoon
     - sportnak
+    - thed
 
 jim:
     - jacob_c
