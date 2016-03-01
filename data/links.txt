@@ -266,6 +266,27 @@ rj_rockets:
     - tim
     - victor
 
+schoon:
+    - bgrainger
+    - bgradin
+    - bryanrsmith
+    - resa
+    - thed
+    - david.rogers
+    - ejball
+    - ianmundy
+    - jacob_c
+    - john
+    - jonathanhaas
+    - kenstipek
+    - masters
+    - schoon
+    - petervenable
+    - rhys.faler
+    - royd
+    - rburnett
+    - etihwddot
+
 kenstipek:
     - nathancarnes
     - bigfreshdoug
