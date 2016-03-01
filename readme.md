@@ -1,4 +1,4 @@
-## [View the graph!](http://hackbellingham.github.io/member-graph/)
+## [View the graph!](http://hackbellingham.github.io/member-graph/) [![Build Status](https://travis-ci.org/hackbellingham/member-graph.svg?branch=master)](https://travis-ci.org/hackbellingham/member-graph)
 
 # What is it?
 

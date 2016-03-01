@@ -267,3 +267,12 @@ kenstipek:
     - bigfreshdoug
     - perry.fizzano
     - schoon
+
+miket:
+    - amiel
+    - el_zilcho
+    - jackiejackie
+    - jenny_cantrell
+    - nathancarnes
+    - rshupe
+    - tim
