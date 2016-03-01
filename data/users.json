@@ -169,6 +169,12 @@
       "img": "https://secure.gravatar.com/avatar/270d9378926f5f22f4f0db3613827658.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0010-24.png"
     },
     {
+      "name": "elisesaxon",
+      "real_name": "",
+      "id": "U0PBVTC8P",
+      "img": "https://secure.gravatar.com/avatar/75841917240d20b893f39add8ae67b20.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0010-24.png"
+    },
+    {
       "name": "el_zilcho",
       "real_name": "",
       "id": "U0P9WKU05",
@@ -314,7 +320,7 @@
     },
     {
       "name": "jonathanhaas",
-      "real_name": "",
+      "real_name": "Jonathan Haas",
       "id": "U0NHF6883",
       "img": "https://avatars.slack-edge.com/2016-02-22/22590946116_c9c9c552cac688fad7e7_24.jpg"
     },
@@ -355,10 +361,22 @@
       "img": "https://avatars.slack-edge.com/2016-02-22/22612473895_8f2e2948d34619318738_24.png"
     },
     {
+      "name": "leah",
+      "real_name": "leah",
+      "id": "U0PJCGB2L",
+      "img": "https://avatars.slack-edge.com/2016-02-29/23625306323_d524b102d1ee9e192263_24.jpg"
+    },
+    {
       "name": "lroot",
       "real_name": "Larry Root",
       "id": "U0NFATR9C",
       "img": "https://avatars.slack-edge.com/2016-02-22/22587352692_a71d4fb949b397cbc7b1_24.png"
+    },
+    {
+      "name": "lucasjhall",
+      "real_name": "",
+      "id": "U0PJJ9QAG",
+      "img": "https://secure.gravatar.com/avatar/e840dabbb157fd2b1dbd72a55b9eabdc.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0011-24.png"
     },
     {
       "name": "mason.bially",
@@ -383,6 +401,12 @@
       "real_name": "Matt Hinz",
       "id": "U0NFAUGSH",
       "img": "https://secure.gravatar.com/avatar/f1175b620c26ca0a8280600b7e679244.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0006-24.png"
+    },
+    {
+      "name": "mattmessmer",
+      "real_name": "",
+      "id": "U0PK63VEU",
+      "img": "https://secure.gravatar.com/avatar/6dacb0cb11157034f12ca549873cb315.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0014-24.png"
     },
     {
       "name": "matt_dev",
@@ -488,9 +512,9 @@
     },
     {
       "name": "rhj4",
-      "real_name": "",
+      "real_name": "Bob Jones",
       "id": "U0NC5NGNB",
-      "img": "https://secure.gravatar.com/avatar/e6fc63d053d69a2afea8e5fb120e639f.jpg?s=24&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F66f9%2Fimg%2Favatars%2Fava_0011-24.png"
+      "img": "https://avatars.slack-edge.com/2016-02-27/23405915312_ec97810605c5840e8d1d_24.jpg"
     },
     {
       "name": "rhys.faler",
@@ -551,6 +575,12 @@
       "real_name": "Michael Nakayama",
       "id": "U0NHEK3G9",
       "img": "https://avatars.slack-edge.com/2016-02-22/22592913233_ab4024605f0952d08e6a_24.png"
+    },
+    {
+      "name": "stephen.boyd",
+      "real_name": "Stephen Boyd",
+      "id": "U0PK1QUD8",
+      "img": "https://avatars.slack-edge.com/2016-02-29/23652104672_0c1d3dca50d7c5c64060_24.jpg"
     },
     {
       "name": "sydneypaige",
