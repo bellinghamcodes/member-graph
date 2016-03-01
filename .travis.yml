@@ -4,6 +4,8 @@ node_js:
 
 env:
   global:
+    - GIT_USER_NAME: 'Travis CI'
+    - GIT_USER_EMAIL: travis@hackbellingham.com
     - GITHUB_REPO: hackbellingham/member-graph
     - secure: olQ8+dqYcG///kZ9PcJNkWWA21t4Gbl0ofoBwMDbgMD7OkUoGps5mmJEEyrmBuBdwjhRfow8TDIDExX2GtcQwCuLNtCBNPqIluFfhHr9uO/TlpDtM07rLqc5MCp+O61IknKzJ6LdOPxxNOLjBAsemFnjmDKu+LFBkUOdQSL6uthgrW69UUcSpmQyvG1xSFpCalcgvb8B+tAgabgnoEUuFLScJ4c/sDXpEckFhKUsQbXJ8mWBPxqS4NHuWPfa7wvY3H/4Qpesl72GyAfgke85Yap1NgRTPKqkOjNtgPLH6Erzbf0wDcUJXTXKgrbze8bkBuauViFd4+QUQye3shQ7blqfVf1RofcDdBC7Xq2NluE95815jXuyWBeigt/iMr227VOZNSZVla7ElQaHKRg/h/n01X0yF5kUR5xrSm23SPRFJlNGYHCDJ+YIC9q4FI1D9DKq/WIWW7gymkdphmLv9QKCAQ/Fgi+IinJZoA7OFgCRxJOB2O6dW7KCdIfnu8+WNFjdm5aYfs6VCgBedPcp8ycmcLPhYaEFE/InFJ3e9LRSlKJyVrOUgP/Cpqo2sUedsttwFzy8cG8BPaMimUjz5UwB/wly7vwDDvV7ZhFsjF/9GAyZu2L7tsp5q3DXWV3dbCm2ZY0RAFjR1n5aX3cQeVekyBsMjzZPkdaxQMD1WVY=
 
