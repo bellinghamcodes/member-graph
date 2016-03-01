@@ -314,7 +314,7 @@
     },
     {
       "name": "jonathanhaas",
-      "real_name": "Jonathan Haas",
+      "real_name": "",
       "id": "U0NHF6883",
       "img": "https://avatars.slack-edge.com/2016-02-22/22590946116_c9c9c552cac688fad7e7_24.jpg"
     },
@@ -1021,62 +1021,6 @@
       "target": 86
     },
     {
-      "source": 52,
-      "target": 13
-    },
-    {
-      "source": 52,
-      "target": 23
-    },
-    {
-      "source": 52,
-      "target": 27
-    },
-    {
-      "source": 52,
-      "target": 30
-    },
-    {
-      "source": 52,
-      "target": 38
-    },
-    {
-      "source": 52,
-      "target": 49
-    },
-    {
-      "source": 52,
-      "target": 61
-    },
-    {
-      "source": 52,
-      "target": 77
-    },
-    {
-      "source": 52,
-      "target": 79
-    },
-    {
-      "source": 52,
-      "target": 80
-    },
-    {
-      "source": 52,
-      "target": 87
-    },
-    {
-      "source": 52,
-      "target": 89
-    },
-    {
-      "source": 52,
-      "target": 91
-    },
-    {
-      "source": 52,
-      "target": 94
-    },
-    {
       "source": 57,
       "target": 0
     },
@@ -1127,6 +1071,10 @@
     {
       "source": 30,
       "target": 49
+    },
+    {
+      "source": 30,
+      "target": 52
     },
     {
       "source": 30,
@@ -1311,6 +1259,10 @@
     {
       "source": 80,
       "target": 49
+    },
+    {
+      "source": 80,
+      "target": 52
     },
     {
       "source": 80,
