@@ -3,10 +3,12 @@
  * Publishes the member graph page(s) via GitHub Pages
  *
  * Reqiures the following environment variables to be set:
- * 	 GITHUB_REPO:  The GitHub repository slug in the format <user>/<repo>
- * 	 GITHUB_TOKEN: A GitHub personal access token with access to the 
- * 	               repository. Can be generated from 
- * 	               https://github.com/settings/tokens
+ * 	 GIT_USER_EMAIL: The email address used for commit messages.
+ * 	 GIT_USER_NAME:  The name used for commit messages.
+ * 	 GITHUB_REPO:    The GitHub repository slug in the format <user>/<repo>
+ * 	 GITHUB_TOKEN:   A GitHub personal access token with access to the 
+ * 	                 repository. Can be generated from 
+ * 	                 https://github.com/settings/tokens
  */
 
 'use strict';
@@ -21,15 +23,23 @@ const fs     = require('fs'),
 
 // Constants
 const sources = path.resolve('./public'),
-      GITHUB_TOKEN = process.env.GITHUB_TOKEN,
-      GITHUB_REPO  = process.env.GITHUB_REPO,
-      githubUrl    = 'https://'+ GITHUB_TOKEN +'@github.com/'+ GITHUB_REPO +'.git'
+      GIT_USER_EMAIL = process.env.GIT_USER_EMAIL,
+      GIT_USER_NAME  = process.env.GIT_USER_NAME,
+      GITHUB_TOKEN   = process.env.GITHUB_TOKEN,
+      GITHUB_REPO    = process.env.GITHUB_REPO,
+      githubUrl      = 'https://'+ GITHUB_TOKEN +'@github.com/'+ GITHUB_REPO +'.git'
 
 
 // Script
 createTempDir()
 	.then( (dir) => {
 		return execPromise('git init .', dir);
+	})
+	.then( (dir) => {
+		return execPromise('git config user.email "'+ GIT_USER_EMAIL +'"', dir);
+	})
+	.then( (dir) => {
+		return execPromise('git config user.name "'+ GIT_USER_NAME +'"', dir);
 	})
 	.then( (repo) => {
 		return copy(sources, repo);
@@ -44,9 +54,8 @@ createTempDir()
 		return execPromise('git push --force --quiet "'+ githubUrl +'" master:gh-pages > /dev/null 2>&1', repo);
 	})
 	.then( (repo) => {
-		console.log(repo);
 		return execPromise('rm -rf "'+ repo +'"');
-	})
+	});
 
  
 // Utility Functions
