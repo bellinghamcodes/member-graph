@@ -10,6 +10,7 @@ document, body {
 }
 
 .node {
+	cursor: pointer;
 	stroke: #fff;
 	stroke-width: 1.5px;
 }
@@ -56,7 +57,7 @@ body {
 	bottom: 0;
 	overflow-x: hidden;
 	overflow-y: auto;
-	width: 280px;
+	width: 0;
 	z-index: 10;
 	
 	transition: transform 0.25s cubic-bezier(.55,0,.1,1);
@@ -64,6 +65,7 @@ body {
 }
 
 .connections--active {
+	width: 280px;
 	transform: translateX(0);
 }
 
@@ -120,6 +122,9 @@ body {
 
 console.log(window.innerWidth, window.innerHeight);
 
+// Handle to the connections panel element
+var panel = document.getElementById('connections');
+
 var nodeSize = 24;
 var width, height, smallest, nodeDistance;
 refreshSizes();
@@ -141,7 +146,7 @@ request.open('GET', 'merged.json');
 request.send();
 
 function refreshSizes() {
-	width = window.innerWidth;
+	width = (window.innerWidth - panel.offsetWidth);
 	height = window.innerHeight;
 	smallest = Math.min(width, height);
 	nodeDistance = Math.floor(smallest/6);
@@ -215,9 +220,6 @@ function render(graph) {
  * Easier way to see connections and more info about them
  --------------------------------------------------------*/
 
-// Handle to the panel element
-var panel = document.getElementById('connections');
-
 /* Displays connections for the clicked person on the graph */
 function showConnectionsForPerson(d, graph) {
 	var connections = [];
@@ -273,7 +275,8 @@ function addConnection(c, graph, me) {
 		nameHolder.setAttribute('class', 'person__name');
 		nameHolder.appendChild(name);
 
-	var desc = document.createTextNode('description');
+	var userDesc = c.title || '';
+	var desc = document.createTextNode(userDesc);
 
 	var descHolder = document.createElement('div');
 		descHolder.setAttribute('class', 'person__desc');
@@ -317,6 +320,7 @@ function showConnectionsPanel() {
 
 	if (!panel.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'))) {
 		panel.className = panel.className + ' ' + className;
+		resize();
 	}
 }
 
