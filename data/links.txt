@@ -92,6 +92,7 @@ bryanrsmith:
 jacob_c:
     - bgrainger
     - bryanrsmith
+    - bryan.albert
     - david.rogers
     - ejball
     - etihwddot
@@ -103,18 +104,41 @@ jacob_c:
     - masters
     - mikekoepp
     - petervenable
+    - rburnett
     - resa
+    - rhj4
     - rick.kaiser
     - robschripsema
     - royd
     - schoon
     - sportnak
+    - thed
 
 jim:
     - jacob_c
     - mikekoepp
     - rick.kaiser
     - robschripsema
+
+jonathanhaas:
+    - bgradin
+    - bgrainger
+    - bryan.albert
+    - bryanrsmith
+    - david.rogers
+    - ejball
+    - etihwddot
+    - ianmundy
+    - jacob_c
+    - john
+    - masters
+    - petervenable
+    - rburnett
+    - resa
+    - royd
+    - schoon
+    - sportnak
+    - thed
 
 kevinstock:
     - alissafrench
@@ -242,8 +266,38 @@ rj_rockets:
     - tim
     - victor
 
+schoon:
+    - bgrainger
+    - bgradin
+    - bryanrsmith
+    - resa
+    - thed
+    - david.rogers
+    - ejball
+    - ianmundy
+    - jacob_c
+    - john
+    - jonathanhaas
+    - kenstipek
+    - masters
+    - schoon
+    - petervenable
+    - rhys.faler
+    - royd
+    - rburnett
+    - etihwddot
+
 kenstipek:
     - nathancarnes
     - bigfreshdoug
     - perry.fizzano
     - schoon
+
+miket:
+    - amiel
+    - el_zilcho
+    - jackiejackie
+    - jenny_cantrell
+    - nathancarnes
+    - rshupe
+    - tim

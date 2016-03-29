@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - '5'
+
+env:
+  global:
+    - GIT_USER_NAME: 'Travis CI'
+    - GIT_USER_EMAIL: travis@hackbellingham.com
+    - GITHUB_REPO: hackbellingham/member-graph
+    - secure: olQ8+dqYcG///kZ9PcJNkWWA21t4Gbl0ofoBwMDbgMD7OkUoGps5mmJEEyrmBuBdwjhRfow8TDIDExX2GtcQwCuLNtCBNPqIluFfhHr9uO/TlpDtM07rLqc5MCp+O61IknKzJ6LdOPxxNOLjBAsemFnjmDKu+LFBkUOdQSL6uthgrW69UUcSpmQyvG1xSFpCalcgvb8B+tAgabgnoEUuFLScJ4c/sDXpEckFhKUsQbXJ8mWBPxqS4NHuWPfa7wvY3H/4Qpesl72GyAfgke85Yap1NgRTPKqkOjNtgPLH6Erzbf0wDcUJXTXKgrbze8bkBuauViFd4+QUQye3shQ7blqfVf1RofcDdBC7Xq2NluE95815jXuyWBeigt/iMr227VOZNSZVla7ElQaHKRg/h/n01X0yF5kUR5xrSm23SPRFJlNGYHCDJ+YIC9q4FI1D9DKq/WIWW7gymkdphmLv9QKCAQ/Fgi+IinJZoA7OFgCRxJOB2O6dW7KCdIfnu8+WNFjdm5aYfs6VCgBedPcp8ycmcLPhYaEFE/InFJ3e9LRSlKJyVrOUgP/Cpqo2sUedsttwFzy8cG8BPaMimUjz5UwB/wly7vwDDvV7ZhFsjF/9GAyZu2L7tsp5q3DXWV3dbCm2ZY0RAFjR1n5aX3cQeVekyBsMjzZPkdaxQMD1WVY=
+
+script:
+  - node ./scripts/process-links
+  - node ./scripts/publish-github-pages
+
+notifications:
+  slack:
+    - secure: CwHBNXirpoPpgjx7WkKXlm/D1HzMb/B2y+O0lv0+vK0in/VTdC+ETvvBxZ75PPRdsJjw7RQD2g68z12Ex6l2xNFY4HqTtukWVT7lAyDbuEh8PWLS6fEc7LUQXSxbMARSoJwq7EBO2Pw1CnQvWhrYu3pZD1DtB7roBGyhKgs08UhKVRQJxCW3Wc9GToYQmgWZDbEDwoevj8akructJ0QstzYrZQCdcLdMCR4C8wcewWi6JKVCC5YBluxWrb1SI9xvqZbcKtJVHZ7/d77i8hmpIToqlM090TlBsxvJcxhw9o3+AwgRTTYHsrhhhi4AMjZ2vgE3FBLLczBUVG8tFdLCRYlEWgUJcMG1a5F4pP0X5QNHGRDi8SIpak63dm122S6l+Nr0nAjdtZtIS7fLO/EtPI69LTMv8AyO0mT7/oNqNvMPbMgvFupDFE0LTY5O3RmX8/mB/kR/ytkV5IrX+ECSOzb65FQxExardQky6gX5TSEUjgqao2KrCwheVyUsKe7Obl9UErhmO54PwbAYuh0/Psr4u2KP64HzTIgnkjVZRx+T+MSPQ8cYhcuJ8oXUr/StAh0Wi/HTkNje/VL/Gf9TvaDKElDqOKnjfvG12vI1fCk12Y4M4/QG5Oon0TysJSwTl1STGy+dBw2NeXHIuuJkiwEmHv32xqKSfbw1Pbtndqo=
