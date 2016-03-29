@@ -26,6 +26,7 @@ function processData(data) {
 				real_name: x.real_name,
 				id: x.id,
 				img: x.profile.image_24,
+				title: x.profile.title,
 			}))
 	};
 
