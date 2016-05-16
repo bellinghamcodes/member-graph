@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=.5, maximum-scale=2">
+<style>
+
+document, body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.node {
+	cursor: pointer;
+	stroke: #fff;
+	stroke-width: 1.5px;
+}
+
+.link {
+	stroke: #999;
+	stroke-opacity: .6;
+
+	transition: stroke-width 300ms ease;
+}
+
+.link.highlighted {
+	stroke: darkred;
+	stroke-width: 2px;
+}
+
+.link.highlighted-clicked {
+	stroke: darkgreen;
+	stroke-width: 2px;
+}
+
+svg {
+	position: relative;
+	z-index: 1;
+}
+
+/** Connections Panel **/
+* { box-sizing: border-box; }
+
+body {
+	color: #333;
+	font: normal 13px/20px "Helvetica Neue", Helvetica, Arial, Sans-serif;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.connections {
+	background: #efefef;
+	box-shadow: 0 0 3px rgba(0,0,0,0.2);
+	position: fixed;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 0;
+	z-index: 10;
+	
+	transition: transform 0.25s cubic-bezier(.55,0,.1,1);
+	transform: translateX(100%);
+}
+
+.connections--active {
+	width: 280px;
+	transform: translateX(0);
+}
+
+.person {
+	padding: 20px;
+}
+
+.person:hover {
+	background: #fff;
+	cursor: pointer;
+}
+
+.person:first-child,
+.person:first-child:hover {
+	background: #333;
+	color: #fff;
+	cursor: default;
+}
+
+.person:first-child .person__desc {
+	color: #ccc;
+}
+
+.person + .person {
+	border-top: 1px solid #ccc;
+}
+
+.person:last-child {
+	border-bottom: 1px solid #ccc;
+}
+
+.person__avatar {
+	float: left;
+}
+
+.person__name {
+	font-weight: bold;
+}
+
+.person__desc {
+	color: #666;
+}
+
+.person__name,
+.person__desc {
+	padding-left: 44px;
+}
+
+</style>
+<body>
+<div id="connections" class="connections"></div>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script>
+
+console.log(window.innerWidth, window.innerHeight);
+
+// Handle to the connections panel element
+var panel = document.getElementById('connections');
+
+var nodeSize = 24;
+var width, height, smallest, nodeDistance;
+refreshSizes();
+
+var color = d3.scale.category20();
+
+var force = d3.layout.force()
+	.linkStrength(0.1);
+
+var svg = d3.select("body").append("svg")
+	.attr("width", width)
+	.attr("height", height);
+
+var request = new XMLHttpRequest();
+request.addEventListener('load', function(e) {
+	render(JSON.parse(request.responseText));
+});
+request.open('GET', 'merged.json');
+request.send();
+
+function refreshSizes() {
+	width = (window.innerWidth - panel.offsetWidth);
+	height = window.innerHeight;
+	smallest = Math.min(width, height);
+	nodeDistance = Math.floor(smallest/6);
+}
+
+function resize() {
+	force.stop();
+	refreshSizes();
+
+    svg
+		.attr("width", width)
+		.attr("height", height);
+
+	force
+		.charge(-nodeDistance)
+		.linkDistance(nodeDistance)
+		.size([width, height])
+		.start();
+}
+
+function render(graph) {
+	force
+		.nodes(graph.nodes)
+		.links(graph.links);
+
+	window.addEventListener('resize', resize);
+	resize();
+
+	var link = svg.selectAll(".link").data(graph.links)
+		.enter().append("line")
+			.attr("class", "link");
+
+	var node = svg.selectAll(".node").data(graph.nodes)
+		.enter().append("image")
+			.attr('xlink:href', function(d) { return d.img; })
+			.attr("class", "node")
+			.attr("height", nodeSize)
+			.attr("width", nodeSize)
+			.attr("id", function(d) { return d.id; })
+			.on("click", function(d) {
+				link.classed('highlighted-clicked', false);
+				link.classed('highlighted-clicked', function(l) { return d === l.source || d === l.target; });
+				showConnectionsForPerson(d, graph);
+			})
+			.on("mouseover", function(d) {
+				link.classed('highlighted', function(l) { return d === l.source || d === l.target; });
+			})
+			.on("mouseout", function() {
+				link.classed('highlighted', false);
+			})
+			.call(force.drag);
+
+	node.append("title")
+		.text(function(d) { return d.name; });
+
+	force.on("tick", function() {
+		var adjustment = Math.floor(nodeSize/2);
+		link.attr("x1", function(d) { return d.source.x; })
+			.attr("y1", function(d) { return d.source.y; })
+			.attr("x2", function(d) { return d.target.x; })
+			.attr("y2", function(d) { return d.target.y; });
+
+		node.attr("x", function(d) { return d.x - adjustment; })
+			.attr("y", function(d) { return d.y - adjustment; });
+	});
+};
+
+
+/*--------------------------------------------------------
+ * Connections panel
+ * Easier way to see connections and more info about them
+ --------------------------------------------------------*/
+
+/* Displays connections for the clicked person on the graph */
+function showConnectionsForPerson(d, graph) {
+	var connections = [];
+
+	// Display the panel
+	showConnectionsPanel();
+
+	// Empty, crufty style
+	panel.innerHTML = '';
+
+	// Add SELF
+	addConnection(d, graph, true);
+
+	if (graph.links.length) {
+
+		// Generate array of unique connections
+		// we don't care about being bi-directional here
+		graph.links.forEach(function(l) {
+			if (d === l.source || d === l.target) {
+				connections[l.source.index] = l.source;
+				connections[l.target.index] = l.target; 
+			}
+		});
+
+		// Remove connection to yourself
+		connections.splice(d.index, 1);
+
+		// Add each connection to the panel
+		connections.forEach(function(c) {
+			addConnection(c, graph);
+		});
+		//console.log('done');
+
+		return;
+	}
+	
+	// Um. You're lonely in hackbellingham connection land...
+	
+}
+
+/* Adds a person the connections panel */
+function addConnection(c, graph, me) {
+	var img = document.createElement('img');
+		img.setAttribute('src', c.img);
+
+	var imgHolder = document.createElement('div');
+		imgHolder.setAttribute('class', 'person__avatar');
+		imgHolder.appendChild(img);
+
+	var name = document.createTextNode('@' + c.name);
+
+	var nameHolder = document.createElement('div');
+		nameHolder.setAttribute('class', 'person__name');
+		nameHolder.appendChild(name);
+
+	var userDesc = c.title || '';
+	var desc = document.createTextNode(userDesc);
+
+	var descHolder = document.createElement('div');
+		descHolder.setAttribute('class', 'person__desc');
+		descHolder.appendChild(desc);
+
+	var person = document.createElement('div');
+		person.setAttribute('data-id', c.id);
+		person.setAttribute('class', 'person');
+		person.appendChild(imgHolder);
+		person.appendChild(nameHolder);
+		person.appendChild(descHolder);
+
+		if (!me) {
+
+			person.onmouseover = function() {
+				dispatchPanelEvent(this.getAttribute('data-id'), 'mouseover');
+			};
+
+			person.onmouseout = function() {
+				dispatchPanelEvent(this.getAttribute('data-id'), 'mouseout');
+			};
+
+			person.onclick = function() {
+				dispatchPanelEvent(this.getAttribute('data-id'), 'click');
+			};
+		}
+
+	panel.appendChild(person);
+}
+
+/* Dispatches panel events to D3 */
+function dispatchPanelEvent(id, type) {
+	var evt = new MouseEvent(type);
+
+	d3.select('#' + id).node().dispatchEvent(evt);
+}
+
+/* Reveal the connections panel */
+function showConnectionsPanel() {
+	var className = 'connections--active';
+
+	if (!panel.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'))) {
+		panel.className = panel.className + ' ' + className;
+		resize();
+	}
+}
+
+</script>
