@@ -301,3 +301,16 @@ miket:
     - nathancarnes
     - rshupe
     - tim
+
+bear454:
+    - amiel
+    - darren.clark
+    - joncoogan
+    - kable
+    - kenstipek
+    - miket
+    - nathancarnes
+    - rj_rockets
+    - rshupe
+    - tim
+    - tyrelh
